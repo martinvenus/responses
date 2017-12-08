@@ -11,8 +11,9 @@ namespace Ublaboo\Responses;
 use Nette,
 	Nette\Utils\Image;
 
-class ImageResponse extends Nette\Object implements Nette\Application\IResponse
+class ImageResponse implements Nette\Application\IResponse
 {
+	use Nette\SmartObject;
 
 	/**
 	 * @var Image|string
